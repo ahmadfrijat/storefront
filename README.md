@@ -10,7 +10,7 @@
 
 ### UML Diagram
 
-![UML Lab31](public/lab31.PNG.png)
+![UML Lab31](public/lab36.PNG.png)
 
 
 
