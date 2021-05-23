@@ -2,9 +2,9 @@
 
 ### Author: Ahmad Al-frijat
 
-- [Deployed Site](https://ahmad-todo.netlify.app/)
-- [PR Link](https://github.com/ahmadfrijat/todo/pull/1)
-- [Repo Link](https://github.com/ahmadfrijat/todo)
+- [Deployed Site](https://frij-storefront.netlify.app/)
+- [PR Link](https://github.com/ahmadfrijat/storefront/pull/1)
+- [Repo Link](https://github.com/ahmadfrijat/storefront)
 
 ## Documentation
 
