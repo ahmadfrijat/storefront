@@ -1,8 +1,8 @@
-section h1{
+.sec1 h1{
     margin: 100px 0 30px 15px ;
     color: gray;
 }
-section ul{
+.sec1 ul{
     display: flex;
     // float: left;
     // margin: 0;
@@ -12,14 +12,16 @@ section ul{
     color: gray;
     margin: 0;
     padding: 0;
+    // float: left;
 }
-section ul li:hover{
+.sec1 ul li:hover{
     color: cornflowerblue;
     cursor: pointer;
 }
-section ul li{
+.sec1 ul li{
     margin: 1em 8.5em;
     background-color: #cecece;
     padding: 5px;
     border-radius: 5px;
+
 }

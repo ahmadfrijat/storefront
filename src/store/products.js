@@ -53,8 +53,14 @@ export default (state = initialState ,action) =>{
     const { type , payload } = action;
     switch(type){
         case 'ACTIVE' :
-            const products = initialState.products.filter(product=> product.category === payload) ;
-            return {products}
+            let products = initialState.products.filter(product=> product.category === payload) ;
+            return {products :  products};
+        case 'ADDTOCART' :
+            const updatedProducts = state.products.map(product=> product.name === payload ? {...product,inStock : product.inStock - 1} : product) ;
+            return {products :  updatedProducts};
+        case 'DELETE' :
+            const deletedProducts = state.products.map(product=> product.name === payload ? {...product,inStock : product.inStock + 1} : product) ;
+            return {products :  deletedProducts};
         default :
         return state;
     }
@@ -63,5 +69,17 @@ export const active = (categoryName) => {
     return {
         type : 'ACTIVE',
         payload : categoryName,
+    }
+}
+export const addtoCart = (product) => {
+    return {
+        type : 'ADDTOCART',
+        payload : product,
+    }
+}
+export const deleteFromCart = (product) => {
+    return {
+        type : 'DELETE',
+        payload : product,
     }
 }

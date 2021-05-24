@@ -5,7 +5,7 @@ import './categories.scss';
 
 function Categories (props){
     return (
-        <section>
+        <section className="sec1">
             <h1> Browes Our Categories</h1>
             <ul>
                 {
