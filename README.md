@@ -1,9 +1,9 @@
-# Props and State : 
+# Combined Reducers : 
 
 ### Author: Ahmad Al-frijat
 
 - [Deployed Site](https://frij-storefront.netlify.app/)
-- [PR Link](https://github.com/ahmadfrijat/storefront/pull/1)
+- [PR Link](https://github.com/ahmadfrijat/storefront/pull/3)
 - [Repo Link](https://github.com/ahmadfrijat/storefront)
 
 ## Documentation
