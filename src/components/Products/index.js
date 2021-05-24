@@ -5,6 +5,8 @@ import Card from '@material-ui/core/Card';
 import { Button } from '@material-ui/core';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
+import products from '../../store/products';
+import {addtoCart} from '../../store/cart';
 
 
 function Products(props) {
@@ -29,7 +31,7 @@ function Products(props) {
                                 in Stock : {product.inStock}
                                 </CardContent>
                                 <section className="btnn">
-                                    <Button variant="light">ADD TO CART</Button>
+                                    <Button onClick={()=> props.addtoCart(product.name)} variant="light">ADD TO CART</Button>
                                     <Button variant="light">VIEW DETAILS</Button>
                                 </section>
                             </Card>
@@ -43,4 +45,5 @@ function Products(props) {
 const mapStateToProps = (state) => {
     return { products: state.Products }
 }
-export default connect(mapStateToProps)(Products);
+const mapDispatchToProps = { addtoCart } 
+export default connect(mapStateToProps , mapDispatchToProps  )(Products);
